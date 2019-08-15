@@ -1,0 +1,126 @@
+@secondary_color: #0aa5d0;
+
+.slider-label {
+    position: absolute;
+    top: 16px;
+
+    &__inner {
+        color: #777777;
+        font-size: 12px;
+        position: relative;
+        white-space: nowrap;
+        left: -50%;
+
+        &--1 {
+            position: absolute;
+            right: -1px;
+            left: auto;
+        }
+
+        &--2 {
+            position: absolute;
+            left: -1px;
+        }
+    }
+}
+
+.filter-panel {
+    padding-right: 5px;
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        min-height: 25px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &--vertical {
+            margin-top: 15px;
+            flex-direction: column;
+
+            .filter-panel__item-title {
+                margin-bottom: 10px;
+                flex-basis: auto;
+            }
+
+            .filter-panel__item-control {
+                flex-basis: auto;
+                margin-bottom: 5px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__item-title {
+        flex: 1 1 35%;
+        font-size: 14px;
+    }
+
+    &__item-control {
+        flex: 1 1 65%;
+    }
+}
+
+.priority-selector {
+    float: left;
+    border: 1px solid @secondary_color;
+    border-radius: 3px;
+
+    &__option {
+        cursor: pointer;
+        float: left;
+        text-align: center;
+        box-sizing: border-box;
+        width: 20px;
+        height: 18px;
+        color: @secondary_color;
+        border-left: 1px solid @secondary_color;
+
+        &:first-child {
+            border-left: 0;
+        }
+
+        &--selected {
+            color: #ffffff;
+            background-color: @secondary_color;
+        }
+    }
+
+    &__icon {
+        font-weight: bold;
+
+        &--timeSlotsLow {
+          display: block;
+          transform: rotate(90deg);
+        }
+    }
+}
+
+.duration-selector {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    height: 22px;
+}
+
+.days-selector {
+    display: flex;
+    justify-content: space-between;
+
+    &__option {
+        color: #777777;
+        padding: 3px 5px;
+        cursor: pointer;
+        user-select: none;
+
+        &--selected {
+            color: @secondary_color;
+        }
+    }
+}

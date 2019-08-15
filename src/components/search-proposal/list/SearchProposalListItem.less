@@ -1,0 +1,43 @@
+.search-proposal-item {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 1px 7px 0 rgba(204,204,204,1);
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: #0ac5f0;
+    color: #ffffff;
+
+    .search-proposal-item--greyed {
+      color: #0a82ab;
+    }
+  }
+
+  &__part {
+    font-size: 14px;
+    flex-grow: 3;
+    flex-basis: 0;
+    padding: 5px;
+
+    &:first-child {
+      font-size: 26px;
+      flex-grow: 1;
+      text-align: right;
+    }
+
+    &:last-child {
+      flex-grow: 2;
+      text-align: right;
+    }
+  }
+
+  &--greyed {
+    color: #777777;
+  }
+}
