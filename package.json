@@ -16,7 +16,7 @@
     "classnames": "^2.2.6",
     "core-js": "^2.5.3",
     "js-cookie": "^2.2.0",
-    "moment": "^2.23.0",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.23",
     "msal": "^0.2.3",
     "office-ui-fabric-react": "^5.51.0",
